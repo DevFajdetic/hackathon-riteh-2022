@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "391172100952",
+    "project_id": "sofanba-2e786",
+    "storage_bucket": "sofanba-2e786.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391172100952:android:0eff0ef46f711302154b2d",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391172100952-5bg63rv3cm9qt5f4mrk6t0biok06bhl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hackathon",
+            "certificate_hash": "b51a7b33fb660d1e1023d4be9a8e4a6832022c52"
+          }
+        },
+        {
+          "client_id": "391172100952-u6svcgl6uu5uupg3qdguf7rltoltf09u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPBowfjbhSHbXrwa077GOx94CmCFKB2dE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391172100952-u6svcgl6uu5uupg3qdguf7rltoltf09u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

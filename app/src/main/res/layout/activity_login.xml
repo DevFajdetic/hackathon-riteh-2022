@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/image_desc_nba_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_garbage"
+        android:tintMode="src_atop"
+        app:tint="@color/overlay_overlay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="28dp">
+
+        <LinearLayout
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/googleSignIn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05">
+
+            <TextView
+                android:id="@+id/appName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EKO"
+                android:textAppearance="@style/DisplayExtraLargeNLv1Left"
+                android:textColor="@color/color_secondary_dark" />
+
+            <TextView
+                android:id="@+id/textAppDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" RIJEKA"
+                android:textAppearance="@style/DisplayExtraLargeNLv1Left"
+                android:textColor="@color/on_color_on_color_primary" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textAppDetailedDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/login_description_detailed"
+            android:textAppearance="@style/HeadlineMediumOnColorLeft"
+            android:textColor="@color/on_color_on_color_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appTitle" />
+
+        <Button
+            android:id="@+id/googleSignIn"
+            style="?attr/materialButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/color_secondary_dark"
+            android:paddingVertical="12dp"
+            android:text="@string/sign_in_with_google"
+            android:textColor="@color/on_color_on_color_primary"
+            app:layout_constraintBottom_toTopOf="@id/anonymousSignIn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anonymousSignIn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:paddingVertical="12dp"
+            android:text="@string/try_without_an_account"
+            android:textAppearance="@style/ButtonLabelOnSurfaceCenter"
+            android:textColor="@color/on_color_on_color_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/on_color_on_color_primary" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
